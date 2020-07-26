@@ -1,0 +1,78 @@
+<center><div style="background-color: hsla(0, 0%, 100%, 0.63); border-radius: 5px; border: 1px solid Gainsboro; box-sizing: border-box; float: center; font-size: 11pt; font-weight: lighter; font: 12px Georgia, serif; height: 580px; width: 700px;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+<div class="panel panel-primary" style="margin: 15px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Ngixc | Shotener</h3>
+    </div>
+<style>
+      .tombol{
+        /*ubah warna background*/
+        background-color: #7942ee;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+      .tombol:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: #6124e3;
+      }
+    </style>
+    </head>
+    <body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="App"><div class="App-container"><div class="App-inner"><div class="App-inner-block"><h1>ngixc-team Shotener</h1><hr>
+    <b>Shotener is.gd</b><form method="post" name="mainform" id="mainform" action="https://is.gd/create.php?format=simple&amp;url=create.php" onsubmit="return submitForm()">
+<div id="errortext"></div>
+<div id="urlboxcontainer">
+<input type="text" class="urlbox" maxlength="500" size="35" name="url" value=""></div>
+<div id="shorturlboxcontainer" style="display: none;">
+https://is.gd/
+<input type="text" class="shorturlbox" maxlength="30" size="30" name="shorturl" value="" onchange="shortURLChanged()" onkeyup="shortURLChanged()" onmouseout="shortURLChanged()"></div>
+<div id="options" style="display: none;">
+<input type="radio" name="opt" id="r1" value="0" checked="checked">
+<label for="r1">Standard</label>
+<input type="radio" name="opt" id="r2" value="1">
+<label for="r2">Lower case</label>
+<input type="radio" name="opt" id="r3" value="2"><label for="r3">Lower case pronounceable</label></div>
+<div id="statsopt" style="display: none;">
+<input type="checkbox" name="logstats" id="logstats" value="1">
+<label for="logstats">Log statistics for this link</label></div>
+<button class="tombol" onclick="reloadThePage()"><b>Shorten!</b></button>
+</form>
+<div>
+<b>Shotener tinyurl.com</b><form method="post" name="mainform" id="mainform" action="https://tinyurl.com/create.php?format=simple&url=" onsubmit="return submitForm()">
+<div id="errortext"></div>
+<div id="urlboxcontainer">
+<input type="text" class="urlbox" maxlength="500" size="35" name="url" value=""></div>
+<div id="shorturlboxcontainer" style="display: none;">
+<input type="text" class="shorturlbox" maxlength="30" size="30" name="shorturl" value="" onchange="shortURLChanged()" onkeyup="shortURLChanged()" onmouseout="shortURLChanged()"></div>
+<div id="options" style="display: none;">
+<input type="radio" name="opt" id="r1" value="0" checked="checked">
+<label for="r1">Standard</label>
+<input type="radio" name="opt" id="r2" value="1">
+<label for="r2">Lower case</label>
+<input type="radio" name="opt" id="r3" value="2"><label for="r3">Lower case pronounceable</label></div>
+<div id="statsopt" style="display: none;">
+<input type="checkbox" name="logstats" id="logstats" value="1">
+<label for="logstats">Log statistics for this link</label></div>
+<button class="tombol" onclick="reloadThePage()"><b>Shorten!</b></button>
+</form>
+</body></html>
+        
+        
+        
