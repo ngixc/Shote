@@ -1,0 +1,19 @@
+    <b>Shotener is.gd</b>
+   <form method="post" name="mainform" id="mainform" action="https://is.gd/create.php?format=simple&amp;url=create.php" onsubmit="return submitForm()">
+<div id="errortext"></div>
+<div id="urlboxcontainer">
+<input type="text" class="urlbox" maxlength="500" size="35" name="url" value=""></div>
+<div id="shorturlboxcontainer" style="display: none;">
+https://is.gd/
+<input type="text" class="shorturlbox" maxlength="30" size="30" name="shorturl" value="" onchange="shortURLChanged()" onkeyup="shortURLChanged()" onmouseout="shortURLChanged()"></div>
+<div id="options" style="display: none;">
+<input type="radio" name="opt" id="r1" value="0" checked="checked">
+<label for="r1">Standard</label>
+<input type="radio" name="opt" id="r2" value="1">
+<label for="r2">Lower case</label>
+<input type="radio" name="opt" id="r3" value="2"><label for="r3">Lower case pronounceable</label></div>
+<div id="statsopt" style="display: none;">
+<input type="checkbox" name="logstats" id="logstats" value="1">
+<label for="logstats">Log statistics for this link</label></div>
+<button class="tombol" onclick="reloadThePage()"><b>Shorten!</b></button>
+</form>
